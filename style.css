@@ -90,6 +90,12 @@ header {
   border-top: 10vw solid transparent;
   border-left: 10vw solid red; */
 }
+.cms-bg-image {
+  width: 25%;
+  height: auto;
+  top: -125px;
+  right: 0px;
+}
 .trans-bg-red > h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -110,10 +116,9 @@ header {
 .main-section {
   border-left: 5px solid var(--red);
 }
-.main-section b,
-h1 {
+.main-section h1 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .main-content-section {
@@ -179,6 +184,18 @@ footer {
   .trans-bg-red {
     width: 100%;
     padding: 15px;
+  }
+  .trans-bg-red > h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .trans-bg-red > p {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .cms-bg-image {
+    top: 260px;
+    width: 40%;
   }
 
   .center-section > img {
