@@ -11,7 +11,27 @@
 
 :root {
   --red: #ec1c12;
+  --slant: 15%;
 }
+.slant {
+  clip-path: polygon(
+    0 var(--slant),
+    100% 0%,
+    100% calc(100% - var(--slant)),
+    0% 100%
+  );
+}
+.slant-top {
+  clip-path: polygon(0 var(--slant), 100% 0%, 100% 100%, 0% 100%);
+}
+.slant-bottom {
+  clip-path: polygon(0 0, 100% 0%, 100% calc(100% - var(--slant)), 0% 100%);
+}
+
+.padding-boottom-cards {
+  padding-bottom: 150px;
+}
+
 .color-red {
   color: var(--red);
 }
@@ -120,6 +140,12 @@ footer {
 }
 
 @media screen and (max-width: 450px) {
+  :root {
+    --slant: 5%;
+  }
+  .padding-boottom-cards {
+    padding-bottom: 80px;
+  }
   .header-nav {
     flex-direction: column;
   }
